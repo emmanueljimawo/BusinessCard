@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -7,7 +9,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.grey,
+        backgroundColor: Colors.lightGreen,
         body: SafeArea(
           child: Center(
             child: Column(
@@ -35,21 +37,33 @@ class MyApp extends StatelessWidget {
                   height: 30,
                   width: 150,
                   child: Divider(
-                    color: Colors.red,
+                    color: Colors.white,
                   ),
                 ),
                 Card(
                   margin: EdgeInsets.symmetric(vertical: 10, horizontal: 30),
                   child: ListTile(
                     leading: Icon(Icons.phone),
-                    title: Center(child: Text('+2348051597488')),
+                    title: Center(
+                        child: Text(
+                      '+2348051597488',
+                      style: TextStyle(
+                        fontSize: 18,
+                      ),
+                    )),
                   ),
                 ),
                 Card(
                   margin: EdgeInsets.symmetric(vertical: 10, horizontal: 30),
                   child: ListTile(
                     leading: Icon(Icons.email),
-                    title: Center(child: Text('emmanueljimawo@yahoo.co.uk')),
+                    title: Center(
+                        child: Text(
+                      'emmanueljimawo@yahoo.co.uk',
+                      style: TextStyle(
+                        fontSize: 18,
+                      ),
+                    )),
                   ),
                 ),
               ],
