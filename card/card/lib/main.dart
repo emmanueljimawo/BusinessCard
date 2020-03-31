@@ -44,13 +44,12 @@ class MyApp extends StatelessWidget {
                   margin: EdgeInsets.symmetric(vertical: 10, horizontal: 30),
                   child: ListTile(
                     leading: Icon(Icons.phone),
-                    title: Center(
-                        child: Text(
+                    title: Text(
                       '+2348051597488',
                       style: TextStyle(
                         fontSize: 18,
                       ),
-                    )),
+                    ),
                   ),
                 ),
                 Card(
